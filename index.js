@@ -16,10 +16,10 @@ connection: {
   reconnect: true,
 },
 identity: {
-  username: 'bokabaea',
-  password: 'oauth:wbeiv6cbbl3srr2an0oiy602mf6s0d'
+  username: 'username',
+  password: 'password'
 },
-channels: ["JustMariusz","thegoldenfury","bokabaea"]
+channels: ["Channels"]
 };
 
 const client = new tmi.client(options);
