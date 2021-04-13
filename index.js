@@ -28,13 +28,13 @@ client.connect();
 client.on('connected', (address, port) => {
   client.say('justmariusz','Okayeg gib eg');
   setTimeout(()=>{
-  client.say('thegoldenfury','!cookie thamriCookie')
+  client.say('channel','!cookie thamriCookie')
   },2000)
   setTimeout(()=>{
-  client.say('thegoldenfury','+ed kromiaHyper')
+  client.say('channel','+ed kromiaHyper')
   },4000)
   setTimeout(()=>{
-  client.say('thegoldenfury','^hw veiAYAYA')
+  client.say('channel','^hw veiAYAYA')
   },6000)
 })
 
@@ -120,10 +120,10 @@ if(message==='hs Botsubs'||message==='hs botsubs'){
   let response=await getSubs()
   client.say(channel,`bokabaea is currently subbed to: ${response}` )
 }
-if(message==='hs Marc'&&channel==='#pepegepaul'){
+if(message==='hs Marc'&&channel==='#channel'){
   client.say(channel,`@lini28 https://m.imgur.com/a/Yg2Yl82 DansGame` )
 }
-if(message==='hs marchatesblackpeople'&&channel==='#pepegepaul'){
+if(message==='hs marchatesblackpeople'&&channel==='#channel'){
   client.say(channel,`@lini28 https://i.imgur.com/yYu5YRX.png cmonBruh`)
 }
 if(message.substring(0,7)==='hs spam'){
@@ -141,10 +141,10 @@ if(message.substring(0,6)==='hs say'){
 if(message==='hs afk'&&username==='JustMariusz'){
   client.say(channel,`$afk I'm currently offline and I'll be back when Mariusz is again online. pajaDank` )
 }
-if(message==='pajaDank'&&channel==='#justmariusz'){
+if(message==='pajaDank'&&channel==='#channel'){
     client.say(channel,`miniDank 🎺 doot` )
 }
-if(message==='miniDank'||message==='pajaM'&&channel==='#justmariusz'){
+if(message==='miniDank'||message==='pajaM'&&channel==='#channel'){
     client.say(channel,`pajaDank 🎺 doot` )
 }
 if(message==='hs Animelist'||message==='hs animelist'){
@@ -170,7 +170,7 @@ if(message==='hs offline chat'){
 if(message==='hs ZULUL'){
   client.say(channel,`https://www.twitch.tv/thesupergogo/clip/BraveRudeMeatloafAliens ZULUL` )
 }
-if(message.substring(0,21)==='A Raid Event at Level'&&username.toLowerCase()==='huwobot'&&channel==='#thegoldenfury'){
+if(message.substring(0,21)==='A Raid Event at Level'&&username.toLowerCase()==='username'&&channel==='#channel'){
   client.action("justmariusz",`A Raid has started Mariusz and helltf join now. veiHypers` )
   client.say("thegoldenfury",`+join veiLost` )
 }
@@ -217,19 +217,19 @@ setTimeout(()=>{
 connect()
 },2000)
 const cookie = ()=>{
-  client.say('thegoldenfury','!cookie thamriCookie');
+  client.say('channel','!cookie thamriCookie');
 }
 const gib = ()=>{
-  client.say('justmariusz','Okayeg gib eg');
+  client.say('channel','Okayeg gib eg');
 }
 const sell = ()=>{
-  client.say('justmariusz','Okayeg sell?');
+  client.say('channel','Okayeg sell?');
 }
 const ed = ()=>{
-  client.say('thegoldenfury','+ed kromiaHyper');
+  client.say('channel','+ed kromiaHyper');
 }
 const hw = ()=>{
-  client.say('thegoldenfury','^hw veiAYAYA');
+  client.say('channel','^hw veiAYAYA');
 }
 const toJSON = ()=>{
     fs.writeFile("./blacklist.json", JSON.stringify(blacklist), function writeJSON(err) {
