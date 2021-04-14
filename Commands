@@ -6,7 +6,7 @@ The prefix is "hs"
 -pingme (Pings you one time)
 -say (Repeats your message one time)
 -spam (Spams a sentence or emote with a limit of 20 lines) 
--songs /Playlist with Twitch Meme songs)
+-songs (Playlist with Twitch Meme songs)
 -tuck (To tuck someone to bed)
 -github (My GitHub profile)
 -botsubs (To see where the bot is subscribed)
