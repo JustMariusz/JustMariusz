@@ -26,15 +26,15 @@ const client = new tmi.client(options);
 
 client.connect();
 client.on('connected', (address, port) => {
-  client.say('justmariusz','Okayeg gib eg');
+  client.say('channel','message');
   setTimeout(()=>{
-  client.say('channel','!cookie thamriCookie')
+  client.say('channel','message')
   },2000)
   setTimeout(()=>{
-  client.say('channel','+ed kromiaHyper')
+  client.say('channel','message')
   },4000)
   setTimeout(()=>{
-  client.say('channel','^hw veiAYAYA')
+  client.say('channel','message')
   },6000)
 })
 
@@ -43,7 +43,7 @@ if(self)return;
 var username = user['display-name'];
 for(var i=0;i<xqcEmotes.length;++i){
   var emote = xqcEmotes[i]
-if(message.includes(emote)&&channel==='#justmariusz'){
+if(message.includes(emote)&&channel==='#channel'){
 checkSubscribed("xqcow",username,(callback)=>{
   if(callback){
     client.action(channel,`MODS BAN ${username} PERMABAN` )
@@ -55,21 +55,21 @@ return;
 };
 
 if(blacklist.includes(username))return;
-if(username==='JustMariusz'){
+if(username==='username'){
   switch(message){
     case'!cookie':
     setTimeout(()=>{
-      client.action(channel,"It's cookie time Mariusz. notkohNom")
+      client.action(channel,"message")
     },7200000)
     break;
     case'+ed':
     setTimeout(()=>{
-      client.action(channel,"Mariusz you can enter the dungeon now. notkohAwoo")
+      client.action(channel,"message")
     },3600000)
     break;
     case'^hw':
     setTimeout(()=>{
-      client.action(channel,"Save some cuties Mariusz. notkohPray")
+      client.action(channel,"message")
     },1200000)
     break;
   }
@@ -78,7 +78,7 @@ if(username==='JustMariusz'){
 if(message==='hs ping'){
   client.say(channel,`I'm a bot made by @JustMariusz the prefix is "hs" and I serve to remind him for @ThePositiveBot @HuwoBot and @spergbot02. For more information write "hs commands". veiYes`)
 }
-if(message.substring(0,6)==='hs ban'&&username==='JustMariusz'){
+if(message.substring(0,6)==='hs ban'&&username==='username'){
   parts=message.split(" ")
   var banuser=parts[2]
   if(!blacklist.includes(banuser)){
@@ -86,7 +86,7 @@ if(message.substring(0,6)==='hs ban'&&username==='JustMariusz'){
   toJSON()
   client.say(channel,`${banuser} is now banned from me. notkohBleh`)
 }}
-if(message.substring(0,8)==='hs unban'&&username==='JustMariusz'){
+if(message.substring(0,8)==='hs unban'&&username==='username'){
   parts=message.split(" ")
   var unbanuser=parts[2]
   if(blacklist.includes(unbanuser)){
@@ -113,18 +113,9 @@ client.say(channel,`You tucked ${user} to bed ${emote} 👉 🛏` )
 if(message==='hs pingme'){
   client.say(channel,`${username} DinkDonk` )
 }
-if(message==='hs retard'&&username==='JustMariusz'){
-  client.say(channel,`Kemonomimi's are humans with animal characteristics. Furry's are animals with human charcateristics. kromiaFacepalm` )
-}
 if(message==='hs Botsubs'||message==='hs botsubs'){
   let response=await getSubs()
   client.say(channel,`bokabaea is currently subbed to: ${response}` )
-}
-if(message==='hs Marc'&&channel==='#channel'){
-  client.say(channel,`@lini28 https://m.imgur.com/a/Yg2Yl82 DansGame` )
-}
-if(message==='hs marchatesblackpeople'&&channel==='#channel'){
-  client.say(channel,`@lini28 https://i.imgur.com/yYu5YRX.png cmonBruh`)
 }
 if(message.substring(0,7)==='hs spam'){
 var messageparts = message.split(" ")
@@ -138,8 +129,8 @@ for(var i=0;i<times;++i){
 if(message.substring(0,6)==='hs say'){
   client.say(channel,`${message.substring(7,message.length)}` )
 }
-if(message==='hs afk'&&username==='JustMariusz'){
-  client.say(channel,`$afk I'm currently offline and I'll be back when Mariusz is again online. pajaDank` )
+if(message==='hs afk'&&username==='username'){
+  client.say(channel,`message` )
 }
 if(message==='pajaDank'&&channel==='#channel'){
     client.say(channel,`miniDank 🎺 doot` )
@@ -148,13 +139,13 @@ if(message==='miniDank'||message==='pajaM'&&channel==='#channel'){
     client.say(channel,`pajaDank 🎺 doot` )
 }
 if(message==='hs Animelist'||message==='hs animelist'){
-  client.say(channel,`This is @JustMariusz's Animelist: https://anilist.co/user/JustMariusz/animelist veiAYAYA` )
+  client.say(channel,`message` )
 }
 if(message==='JustMariusz'){
-  client.say(channel,`${username} Stop tagging him. veiGlare` )
+  client.say(channel,`${username} stop tagging him. veiGlare` )
 }
 if(message==='hs commands'){
-  client.say(channel,`The commands are ban/unban and afk (only Creator) circle, sky, wave, box, block and pyramid (only for emotes) ping, pingme, say, spam (limit 20), Songs, tuck, Botsubs, Animelist, offline chat, ZULUL and cookie. kromiaThumbsup` )
+  client.say(channel,`The commands are ban/unban and afk (only Creator) circle, sky, wave, box, block and pyramid (only for emotes) ping, pingme, say, spam (limit 20), Songs, tuck, GitHub, Botsubs, Animelist, offline chat, ZULUL and cookie. kromiaThumbsup` )
 }
 if(message==='hs Songs'||message==='hs songs'){
   client.say(channel,`A nice playlist with Twitch meme songs: https://www.youtube.com/playlist?list=PLplxrUEN3mvAiqKFu_iIDv-DYfN-Gt94w AlienPls` )
@@ -171,8 +162,8 @@ if(message==='hs ZULUL'){
   client.say(channel,`https://www.twitch.tv/thesupergogo/clip/BraveRudeMeatloafAliens ZULUL` )
 }
 if(message.substring(0,21)==='A Raid Event at Level'&&username.toLowerCase()==='username'&&channel==='#channel'){
-  client.action("justmariusz",`A Raid has started Mariusz and helltf join now. veiHypers` )
-  client.say("thegoldenfury",`+join veiLost` )
+  client.action("channel",`message` )
+  client.say("channel",`message` )
 }
 if(message.substring(0,9)==='hs circle'){
   var second_part=message.substring(10,message.length)
@@ -217,19 +208,19 @@ setTimeout(()=>{
 connect()
 },2000)
 const cookie = ()=>{
-  client.say('channel','!cookie thamriCookie');
+  client.say('channel','message');
 }
 const gib = ()=>{
-  client.say('channel','Okayeg gib eg');
+  client.say('channel','message');
 }
 const sell = ()=>{
-  client.say('channel','Okayeg sell?');
+  client.say('channel','message');
 }
 const ed = ()=>{
-  client.say('channel','+ed kromiaHyper');
+  client.say('channel','message');
 }
 const hw = ()=>{
-  client.say('channel','^hw veiAYAYA');
+  client.say('channel','message');
 }
 const toJSON = ()=>{
     fs.writeFile("./blacklist.json", JSON.stringify(blacklist), function writeJSON(err) {
