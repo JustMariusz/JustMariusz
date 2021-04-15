@@ -198,28 +198,28 @@ if(message.substring(0,8)==='hs block'){
 })
 const connect = ()=>{
 
-  setInterval(cookie,7205000)
-  setInterval(gib,544000)
-  setInterval(sell,3007000)
-  setInterval(ed,3606000)
-  setInterval(hw,1209000)
+  setInterval(name,time)
+  setInterval(name,time)
+  setInterval(name,time)
+  setInterval(name,time)
+  setInterval(name,time) 
 }
 setTimeout(()=>{
 connect()
 },2000)
-const cookie = ()=>{
+const name = ()=>{
   client.say('channel','message');
 }
-const gib = ()=>{
+const name = ()=>{
   client.say('channel','message');
 }
-const sell = ()=>{
+const name = ()=>{
   client.say('channel','message');
 }
-const ed = ()=>{
+const name = ()=>{
   client.say('channel','message');
 }
-const hw = ()=>{
+const name = ()=>{
   client.say('channel','message');
 }
 const toJSON = ()=>{
