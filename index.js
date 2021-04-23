@@ -25,18 +25,6 @@ channels: ["Channels"]
 const client = new tmi.client(options);
 
 client.connect();
-client.on('connected', (address, port) => {
-  client.say('channel','message');
-  setTimeout(()=>{
-  client.say('channel','message')
-  },2000)
-  setTimeout(()=>{
-  client.say('channel','message')
-  },4000)
-  setTimeout(()=>{
-  client.say('channel','message')
-  },6000)
-})
 
 client.on('chat',async(channel,user,message,self)=>{
 if(self)return;
@@ -141,17 +129,17 @@ if(message==='miniDank'||message==='pajaM'&&channel==='#channel'){
 if(message==='hs Animelist'||message==='hs animelist'){
   client.say(channel,`message` )
 }
-if(message==='JustMariusz'){
+if(message==='@JustMariusz'){
   client.say(channel,`${username} stop tagging him. veiGlare` )
 }
 if(message==='hs commands'){
-  client.say(channel,`The commands are ban/unban and afk (only Creator) circle, sky, wave, box, block and pyramid (only for emotes) ping, pingme, say, spam (limit 20), Songs, tuck, GitHub, Botsubs, Animelist, offline chat, ZULUL and cookie. kromiaThumbsup` )
+  client.say(channel,`Here's a list with all commands: https://github.com/JustMariusz/JustMariusz/blob/main/Commands kromiaThumbsup` )
 }
 if(message==='hs Songs'||message==='hs songs'){
   client.say(channel,`A nice playlist with Twitch meme songs: https://www.youtube.com/playlist?list=PLplxrUEN3mvAiqKFu_iIDv-DYfN-Gt94w AlienPls` )
 }
 if(message==='hs cookie'){
-  client.say(channel,`$give cookie ${username} veiBlush` )
+  client.say(channel,`$give cookie ${username}` )
 }
 if(message==='hs offline chat'){
   client.say(channel,`Wait people are still here? lol thats really weird. i was just gonna click on a vod to watch cuz a friend recommended it and saw you guys still sitting here when the streamer isnt even live.
@@ -163,8 +151,11 @@ if(message==='hs ZULUL'){
 }
 if(message.substring(0,21)==='A Raid Event at Level'&&username.toLowerCase()==='username'&&channel==='#channel'){
   client.action("channel",`message` )
-  client.say("channel",`message` )
 }
+var emotes=message.split(" ")
+ let emotes[0] = emotes[2]
+ let emotes[1] = emotes[3]
+if(emotes[1]===undefined)emotes[1]=emotes[0]
 if(message.substring(0,9)==='hs circle'){
   var second_part=message.substring(10,message.length)
   var emotes=second_part.split(" ")
@@ -199,26 +190,10 @@ if(message.substring(0,8)==='hs block'){
 const connect = ()=>{
 
   setInterval(name,time)
-  setInterval(name,time)
-  setInterval(name,time)
-  setInterval(name,time)
-  setInterval(name,time) 
 }
 setTimeout(()=>{
 connect()
 },2000)
-const name = ()=>{
-  client.say('channel','message');
-}
-const name = ()=>{
-  client.say('channel','message');
-}
-const name = ()=>{
-  client.say('channel','message');
-}
-const name = ()=>{
-  client.say('channel','message');
-}
 const name = ()=>{
   client.say('channel','message');
 }
