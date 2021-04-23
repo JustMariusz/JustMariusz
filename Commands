@@ -1,4 +1,4 @@
-List of all commands
+List of all commands:
 
 The prefix is "hs"
 
@@ -11,11 +11,12 @@ The prefix is "hs"
 -github (My GitHub profile)
 -botsubs (To see where the bot is subscribed)
 -animelist (My Anime list) 
--offline chat (Just a copypasta)
+-offline chat (Copypasta)
+-whoasked (Copypasta)
 -ZULUL (Twitch Clip)
 -cookie (gives you the cookie from SupiBot)
 
-Emote command list
+Emote command list:
 
 -circle (For 2 Emotes)
 -sky (For 1 Emote)
@@ -23,5 +24,11 @@ Emote command list
 -wave (For 2 Emotes)
 -square (For 2 Emotes)
 -traingle (For 2 Emotes)
+
+Creator commands:
+
+-ban (Bans a user from the bot)
+-unban (Unbans a user from the bot)
+-afk (afk message when the bot is offline)
 
 And that's everything :D 
