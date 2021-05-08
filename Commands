@@ -2,7 +2,8 @@ List of all commands:
 
 The prefix is "hs"
 
--ping (Gives you all information you need to know about the bot)
+-ping (Pong)
+-help (Gives you all information you need to know about the bot)
 -pingme (Pings you one time)
 -say (Repeats your message one time)
 -spam (Spams a sentence or emote with a limit of 20 lines) 
