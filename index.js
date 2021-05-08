@@ -63,9 +63,12 @@ if(username==='username'){
   }
 };
 
-if(message==='hs ping'){
+if(message==='hs help'){
   client.say(channel,`I'm a bot made by @JustMariusz the prefix is "hs" and I serve to remind him for @ThePositiveBot @HuwoBot and @spergbot02. For more information write "hs commands". veiYes`)
 }
+ if(message==='hs ping'){
+ client.say(channel,`Pong \ FeelsDankMan /`)
+ }
 if(message.substring(0,6)==='hs ban'&&username==='username'){
   parts=message.split(" ")
   var banuser=parts[2]
