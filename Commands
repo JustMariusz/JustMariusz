@@ -1,6 +1,6 @@
 List of all commands:
 
-The prefix is "hs"
+The prefix is "%"
 
 -ping (Pong)
 -help (Gives you all information you need to know about the bot)
@@ -12,7 +12,7 @@ The prefix is "hs"
 -github (My GitHub profile)
 -botsubs (To see where the bot is subscribed)
 -animelist (My Anime list) 
--offline chat (Copypasta)
+-offlinechat (Copypasta)
 -whoasked (Copypasta)
 -ZULUL (Twitch Clip)
 -cookie (gives you the cookie from SupiBot)
