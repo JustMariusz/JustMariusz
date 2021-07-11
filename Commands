@@ -31,5 +31,6 @@ Creator commands:
 -ban (Bans a user from the bot)
 -unban (Unbans a user from the bot)
 -afk (afk message when the bot is offline)
-
+-join (joins the target channel)
+-leave (parts from the target channel)
 And that's everything :D 
