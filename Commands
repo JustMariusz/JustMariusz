@@ -2,10 +2,9 @@ List of all commands:
 
 The prefix is "%"
 
--ping (Pong)
+-ping (Bot uptime)
 -help (Gives you all information you need to know about the bot)
 -pingme (Pings you one time)
--say (Repeats your message one time)
 -spam (Spams a sentence or emote with a limit of 20 lines) 
 -songs (Playlist with Twitch Meme songs)
 -tuck (To tuck someone to bed)
@@ -26,11 +25,12 @@ Emote command list:
 -square (For 2 Emotes)
 -traingle (For 2 Emotes)
 
-Creator commands:
+Developer commands:
 
 -ban (Bans a user from the bot)
 -unban (Unbans a user from the bot)
 -afk (afk message when the bot is offline)
 -join (joins the target channel)
 -leave (parts from the target channel)
+-echo (Repeats your message one time)
 And that's everything :D 
